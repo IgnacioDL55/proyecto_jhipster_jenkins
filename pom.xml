@@ -24,6 +24,7 @@
         -->
         <maven.version>3.2.5</maven.version>
         <java.version>17</java.version>
+        <logstash-logback-encoder.version>7.4</logstash-logback-encoder.version>
         <node.version>v22.15.0</node.version>
         <npm.version>11.3.0</npm.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -137,6 +138,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-undertow</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.logstash.logback</groupId>
+            <artifactId>logstash-logback-encoder</artifactId>
+            <version>${logstash-logback-encoder.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
