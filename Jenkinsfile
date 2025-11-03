@@ -5,9 +5,6 @@ node {
         checkout scm
     }
 
-    // AÑADIMOS ESTE BLOQUE 'dir'
-    // "desde" la subcarpeta 'proyecto-jhispter'
-    dir('proyecto_jhispter_jenkins') {
 
         stage('check java') {
             sh "java -version"
@@ -42,6 +39,4 @@ node {
             sh "./mvnw -ntp jib:build"
           }
         }
-
-    } // <-- FIN DEL BLOQUE 'dir'
 }
