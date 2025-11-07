@@ -110,7 +110,7 @@ jhipster:
     logstash: # Forward logs to logstash over a socket, used by LoggingConfiguration
       enabled: true
       host: localhost
-      port: 50000
+      port: 5000
       ring-buffer-size: 512
 # ===================================================================
 # Application specific properties
